@@ -1,0 +1,8 @@
+FROM openjdk:21
+
+COPY ./target/Demo.jar .
+
+WORKDIR .
+
+#Todo One step is missing 
+CMD ["java","-jar","Demo.jar"]
